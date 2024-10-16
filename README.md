@@ -25,20 +25,21 @@ This is a dynamic and responsive Weather App built with **Ionic** and **Angular*
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone https://github.com/MOQRAN/weatherApp.git
    cd weather-app-ionic
+   ```
 
 2. Install the dependencies:
 
-```bash
+```
   npm install
 ```
 3. Add your OpenWeather API Key:
   - Go to OpenWeather and sign up for an API key.
   - In the `src/environments/environment.ts` file, replace `your_api_key_here` with your OpenWeather API key.
 
-```typescript
+```
 
     export const environment = {
       production: false,
@@ -47,13 +48,13 @@ This is a dynamic and responsive Weather App built with **Ionic** and **Angular*
 ```
 4. Run the app:
 
-```bash
+```
 
   ionic serve
 ```
 5. To run the app on a real device, make sure to install the Ionic CLI and use:
 
-```bash
+```
 
     ionic cordova run android --device
 ```
@@ -76,3 +77,6 @@ This is a dynamic and responsive Weather App built with **Ionic** and **Angular*
   - Smooth animations for transitions and loading.
   - Error handling for incorrect city names and network issues.
   - Responsive design for all screen sizes.
+
+
+Author: Mohammed Moqran
