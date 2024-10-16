@@ -35,10 +35,8 @@ This is a dynamic and responsive Weather App built with **Ionic** and **Angular*
   npm install
 ```
 3. Add your OpenWeather API Key:
-
-    - Go to OpenWeather and sign up for an API key.
-
-    - In the `src/environments/environment.ts` file, replace `your_api_key_here` with your OpenWeather API key.
+  - Go to OpenWeather and sign up for an API key.
+  - In the `src/environments/environment.ts` file, replace `your_api_key_here` with your OpenWeather API key.
 
 typescript
 
