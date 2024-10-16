@@ -38,42 +38,41 @@ This is a dynamic and responsive Weather App built with **Ionic** and **Angular*
   - Go to OpenWeather and sign up for an API key.
   - In the `src/environments/environment.ts` file, replace `your_api_key_here` with your OpenWeather API key.
 
-typescript
+```typescript
 
-export const environment = {
-  production: false,
-  weatherApiKey: 'your_api_key_here'
-};
+    export const environment = {
+      production: false,
+      weatherApiKey: 'your_api_key_here'
+    };
+```
+4. Run the app:
 
-Run the app:
+```bash
 
-bash
+  ionic serve
+```
+5. To run the app on a real device, make sure to install the Ionic CLI and use:
 
-ionic serve
-
-To run the app on a real device, make sure to install the Ionic CLI and use:
-
-bash
+```bash
 
     ionic cordova run android --device
+```
+## Usage
+  - Enter any city name to fetch the weather data.
+  - Alternatively, click the "Get Current Location" button to retrieve weather data based on your location.
+  - The app will automatically switch to dark mode if your system is in dark mode.
 
-Usage
+## Technologies Used
 
-    Enter any city name to fetch the weather data.
-    Alternatively, click the "Get Current Location" button to retrieve weather data based on your location.
-    The app will automatically switch to dark mode if your system is in dark mode.
+  - Ionic Framework: For the mobile-optimized UI and cross-platform capabilities.
+  - Angular: To manage the app logic and HTTP requests.
+  - OpenWeather API: Provides the real-time weather data.
+  - Geolocation Plugin: To get the user's current location.
+  - CSS Variables: For seamless dark mode support.
 
-Technologies Used
+## Enhancements
 
-    Ionic Framework: For the mobile-optimized UI and cross-platform capabilities.
-    Angular: To manage the app logic and HTTP requests.
-    OpenWeather API: Provides the real-time weather data.
-    Geolocation Plugin: To get the user's current location.
-    CSS Variables: For seamless dark mode support.
-
-Enhancements
-
-    Dark mode support with automatic theme switching.
-    Smooth animations for transitions and loading.
-    Error handling for incorrect city names and network issues.
-    Responsive design for all screen sizes.
+  - Dark mode support with automatic theme switching.
+  - Smooth animations for transitions and loading.
+  - Error handling for incorrect city names and network issues.
+  - Responsive design for all screen sizes.
