@@ -35,3 +35,27 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+
+/* global.scss */
+
+/* Light Theme (default) */
+:root {
+  --background: #ffffff;
+  --text-color: #000000;
+  --card-background: #f6d365;
+  --card-gradient: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  --button-background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+  --error-color: red;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --text-color: #ffffff;
+    --card-background: #333333;
+    --card-gradient: linear-gradient(135deg, #333333 0%, #555555 100%);
+    --button-background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    --error-color: #ff6b6b;
+  }
+}

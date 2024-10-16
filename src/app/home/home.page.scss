@@ -10,32 +10,11 @@
   margin-top: 10px;
 }
 
-ion-card {
-  margin-top: 20px;
-  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-  color: white;
-  border-radius: 15px;
-}
 
-ion-card-title {
-  font-size: 1.5rem;
-  text-align: center;
-}
 
-ion-card-subtitle {
-  text-align: center;
-  text-transform: capitalize;
-}
 
-ion-button {
-  --background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
-}
 
-ion-input {
-  --background: white;
-  border-radius: 5px;
-  color: black;
-}
+
 .temperature {
   font-size: 3rem;
   font-weight: bold;
@@ -53,3 +32,58 @@ ion-input {
     transform: translateY(0);
   }
 }
+
+
+
+ion-content {
+  background-color: var(--background);
+  color: var(--text-color);
+}
+
+.temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+  color: var(--text-color);
+}
+
+.details {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+.error-message {
+  color: var(--error-color);
+  text-align: center;
+  margin-top: 10px;
+}
+
+ion-card {
+  margin-top: 20px;
+  background: var(--card-gradient);
+  color: white;
+  border-radius: 15px;
+}
+
+ion-card-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+ion-card-subtitle {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+ion-button {
+  --background: var(--button-background);
+}
+
+ion-input {
+  --background: white;
+  color: black;
+  border-radius: 5px;
+}
+
