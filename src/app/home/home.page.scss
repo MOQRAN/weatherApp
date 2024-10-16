@@ -1,27 +1,55 @@
-#container {
+
+.details {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
   text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-top: 10px;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-card {
+  margin-top: 20px;
+  background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
+  color: white;
+  border-radius: 15px;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+ion-card-title {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
-#container a {
-  text-decoration: none;
+ion-card-subtitle {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+ion-button {
+  --background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+}
+
+ion-input {
+  --background: white;
+  border-radius: 5px;
+  color: black;
+}
+.temperature {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
